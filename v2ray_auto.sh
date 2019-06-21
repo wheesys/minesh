@@ -112,3 +112,5 @@ echo "your server port is $server_port, id is $new_uuid"
 sudo sed -i "s/\"port\":.*/\"port\": $server_port,/g" /etc/v2ray/config.json
 sudo sed -i "s/\"id\":.*/\"id\": \"$new_uuid\",/g" /etc/v2ray/config.json
 sudo systemctl restart v2ray
+
+cat /etc/v2ray/config.json
